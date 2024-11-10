@@ -15,7 +15,7 @@
       <div class="flex items-center gap-4">
         <div class="w-16 h-16 flex-shrink-0">
           <img 
-            src="/aws-logo.png" 
+            src="../public/aws-logo.png" 
             alt="AWS Certified Solutions Architect Badge" 
             class="w-full h-full object-contain"
           />

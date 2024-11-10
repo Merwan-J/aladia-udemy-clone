@@ -11,7 +11,7 @@
   >
     <div v-if="!isSticky" class="relative">
       <img 
-        src="/course-thumbnail.jpg" 
+        src="../public/course-thumbnail.jpg" 
         alt="Course thumbnail" 
         class="w-full aspect-video object-cover"
       />
