@@ -13,7 +13,7 @@
 
     <div class="flex items-center gap-6 my-4">
       <img 
-        :src="instructor.avatar" 
+        :src="getImageUrl(`${instructor.avatar}`)" 
         :alt="instructor.name"
         class="w-[110px] h-[110px] rounded-full object-cover"
       />

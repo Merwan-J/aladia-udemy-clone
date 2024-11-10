@@ -7,11 +7,11 @@
         to build in-demand career skills.
       </p>
       <div class="flex items-center gap-8">
-        <img src="./public/nasdaq.svg" alt="Nasdaq" class="h-12 opacity-80" />
-        <img src="./public/volkswagen.svg" alt="Volkswagen" class="h-12 opacity-80" />
-        <img src="./public/box.svg" alt="Box" class="h-12 opacity-80" />
-        <img src="./public/netapp.svg" alt="NetApp" class="h-12 opacity-80" />
-        <img src="./public/eventbrite.svg" alt="Eventbrite" class="h-12 opacity-80" />
+        <img :src="getImageUrl('nasdaq')" alt="Nasdaq" class="h-12 opacity-80" />
+        <img :src="getImageUrl('volkswagen')" alt="Volkswagen" class="h-12 opacity-80" />
+        <img :src="getImageUrl('box')" alt="Box" class="h-12 opacity-80" />
+        <img :src="getImageUrl('netapp')" alt="NetApp" class="h-12 opacity-80" />
+        <img :src="getImageUrl('eventbrite')" alt="Eventbrite" class="h-12 opacity-80" />
       </div>
     </div>
 
@@ -60,7 +60,7 @@
     </div>
 
     <div class="px-12 flex justify-between items-center">
-      <img src="./public/logo-udemy-light.svg" alt="Udemy" class="h-8 text-white" />
+      <img :src="getImageUrl('udemy-logo-light')" alt="Udemy" class="h-8 text-white" />
       <p class="text-[13px] text-gray-300">© 2024 Udemy, Inc.</p>
     </div>
   </footer>
@@ -68,4 +68,6 @@
 
 <script setup>
 import BaseButton from './BaseButton.vue'
+import { getImageUrl } from '@/utils/imageUrls'
+
 </script>

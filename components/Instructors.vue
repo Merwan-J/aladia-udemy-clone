@@ -21,7 +21,7 @@ const instructors = [
     name: "EdYoda for Business",
     link: "https://www.edyoda.com",
     subtitle: "Join me on www.edyoda.com",
-    avatar: "/edyoda-logo.jpg",
+    avatar: "edyoda-logo.jpg",
     stats: {
       rating: 4.1,
       reviews: 47184,
@@ -39,7 +39,7 @@ const instructors = [
     name: "Ashish Pandey",
     link: "#",
     subtitle: "Principal Consultant at zekeLabs (EdYoda)",
-    avatar: "/ashish-image.jpg",
+    avatar: "ashish-image.jpg",
     stats: {
       rating: 3.9,
       reviews: 6687,

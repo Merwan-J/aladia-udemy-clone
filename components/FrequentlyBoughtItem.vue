@@ -8,7 +8,7 @@
 
     <div class="flex items-start gap-6" :class="{ 'mt-5': !isFirst }">
       <img 
-        :src="course.image" 
+        :src="getImageUrl(`${course.image}`)" 
         :alt="course.title"
         class="w-[176px] h-[100px] object-cover flex-shrink-0"
       />
@@ -46,6 +46,8 @@
 </template>
 
 <script setup>
+import { getImageUrl } from '@/utils/imageUrls'
+
 defineProps({
   course: {
     type: Object,

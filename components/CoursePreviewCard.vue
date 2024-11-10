@@ -11,7 +11,7 @@
   >
     <div v-if="!isSticky" class="relative">
       <img 
-        src="./public/course-thumbnail.jpg" 
+        :src="getImageUrl('course-thumbnail.png')" 
         alt="Course thumbnail" 
         class="w-full aspect-video object-cover"
       />
@@ -135,6 +135,8 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { getImageUrl } from '@/utils/imageUrls'
+
 
 const appliedCoupon = ref(true) 
 const removeCoupon = () => {

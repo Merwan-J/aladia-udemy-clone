@@ -6,7 +6,7 @@
       <CourseItem 
         v-for="(course, index) in courses" 
         :key="course.id"
-        :course="{ ...course, image: `/sab-${index + 1}.jpg` }"
+        :course="{ ...course, image: getImageUrl(`sab-${index + 1}.jpg`) }"
       />
     </div>
 
@@ -20,6 +20,8 @@
 
 <script setup>
 import CourseItem from './CourseItem.vue'
+import { getImageUrl } from '@/utils/imageUrls'
+
 
 const courses = [
   {

@@ -35,7 +35,7 @@ const courses = [
   {
     id: 1,
     title: "AWS Services for Solutions Architect Associate",
-    image: "/fbt-1.jpg",
+    image: "fbt-1.jpg",
     instructor: "EdYoda for Business, Ashish Pandey",
     rating: 4.4,
     reviews: 2886,
@@ -44,7 +44,7 @@ const courses = [
   {
     id: 2,
     title: "Amazon Elastic Compute Cloud (EC2) Beginners Certification",
-    image: "/fbt-2.jpg",
+    image: "fbt-2.jpg",
     instructor: "YouAccel Training, Blue Digital Media",
     rating: 4.2,
     reviews: 553,
@@ -53,7 +53,7 @@ const courses = [
   {
     id: 3,
     title: "Cloud Computing and Amazon Web Services (AWS) Fundamentals",
-    image: "/fbt-3.jpg",
+    image: "fbt-3.jpg",
     instructor: "YouAccel Training",
     rating: 4.2,
     reviews: 1061,

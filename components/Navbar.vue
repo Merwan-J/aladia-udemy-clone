@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
       <!-- Left section -->
       <div class="flex items-center gap-4">
-        <img src="./public/udemy-logo.svg" alt="Udemy" class="h-8" />
+        <img :src="getImageUrl('udemy-logo')" alt="Udemy" class="h-8" />
         <div class="relative group">
           <button class="text-sm hover:text-purple-600">Categories</button>
           
@@ -94,6 +94,8 @@
 
 <script setup>
 import BaseButton from './BaseButton.vue'
+import { getImageUrl } from '@/utils/imageUrls'
+
 
 const categories = [
   {

@@ -10,7 +10,7 @@
         <CourseCard 
           v-for="(course, index) in edYodaCourses" 
           :key="course.id"
-          :image="`/more-ed-${index + 1}.jpg`"
+          :image="getImageUrl(`more-ed-${index + 1}.jpg`)"
           :course="course"
           class="w-[200px]"
         />
@@ -27,7 +27,7 @@
         <CourseCard 
           v-for="(course, index) in ashishCourses" 
           :key="course.id"
-          :image="`/more-ash-${index + 1}.jpg`"
+          :image="getImageUrl(`more-ash-${index + 1}.jpg`)"
           :course="course"
           class="w-[200px]"
         />
@@ -42,6 +42,7 @@
 
 <script setup>
 import CourseCard from './CourseCard.vue'
+import { getImageUrl } from '@/utils/imageUrls'
 
 const edYodaCourses = [
   {
